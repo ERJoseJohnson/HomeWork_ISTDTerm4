@@ -1,2 +1,2 @@
-include ':app', ':ProbSet1B'
+include ':app', ':ProbSet1B', ':lib', ':lib2'
 rootProject.name='PiLangSec'
