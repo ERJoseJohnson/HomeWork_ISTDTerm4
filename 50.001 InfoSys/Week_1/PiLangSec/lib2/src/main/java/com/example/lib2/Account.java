@@ -39,7 +39,7 @@ public class Account {
     }
 
     public void setAnnualInterestRate(double annumInterest) {
-        this.annualInterestRate = annumInterest;
+        this.annualInterestRate = annumInterest/100;
     }
 
     public Date getDateCreated(){
@@ -51,11 +51,10 @@ public class Account {
     }
 
     public double getMonthlyInterest(){
-        double monthInterestRate=getMonthlyInterestRate();
-        return balance*monthInterestRate;
+        return balance*this.getMonthlyInterestRate();
     }
 
-    public void withdraw(int amount){
+    public void withdraw(double amount){
         this.balance-=amount;
     }
 

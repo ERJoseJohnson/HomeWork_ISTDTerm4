@@ -12,7 +12,6 @@ public class PiGenerator {
      */
 
     public static int[] computePiInHex(int precision) {
-        // TODO: Implement (Problem b)
         if (precision < 0) {
             return null;
         }

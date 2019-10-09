@@ -19,6 +19,18 @@ public class DigitsToStringConverter {
     public static String convertDigitsToString(int[] digits, int base,
                                                char[] alphabet) {
         // TODO: Implement (Problem d)
-        return "";
+        if (alphabet.length!=base){ return null;}
+
+        String outString="";
+        for (int i=0; i<digits.length-1;i++){
+
+            if (digits[i]>=base || digits[i]<0){
+                return null;
+            }
+            else {
+                outString += alphabet[digits[i]];
+            }
+        }
+        return outString;
     }
 }
